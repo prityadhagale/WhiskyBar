@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Whisky Exchange</title>
+        <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> 
+     <style>
+         ul{
+             list-style: none;
+             display: flex;
+         }
+         li{
+            margin-right: 30px;
+         }
+         a{
+             text-decoration: none;
+             color: purple;
+         }
+         .card
+             {
+                 width: 250px;
+                 padding: 10px;
+                 margin: 20px;
+                 box-shadow: 3px 3px 3px rgb(141, 139, 139);
+                 text-align: center;
+                 font-family: arial;
+             }
+             .card-image
+             {
+                width: 100%;
+                height: 200px;
+             }
+             .card-header
+             {
+               margin-top: 20px;
+               font-weight: bold;
+             }
+             
+            .Container
+            {
+                display: inline-flex;
+                flex-wrap: wrap;
+            }
+        body{
+            background-color:blanchedalmond;
+        }
+        #anchor
+        {
+            color: brown;
+        }
+        
+        footer{
+            justify-content: center;
+            align-items: center;
+        }
+        .icons
+            {
+                font-weight: bold;
+                margin-bottom: 10px;
+                margin-left: 10px;
+                justify-content: center;
+                align-items: center;
+                font-size: 15px;
+            }
+     </style>
+    </head>
+        <body class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <img  class="navbar-brand" src="../public/images/download.jpg" height="100px" width="200px">
+                    <div class="input-group w-50">
+                            <input type="text" class="form-control" placeholder="search for your perfect bottle">
+                            <button class="btn btn-warning ">
+                                <span class="bi bi-search"></span>
+                            </button>
+                        </div>
+                        <button data-bs-target="#register" data-bs-toggle="modal" class="btn btn-outline-light bg-gradient text-light " >Create Account</button>
+                        <button data-bs-target="#login" data-bs-toggle="modal" class="btn btn-outline-light bg-gradient text-light  " >Login</button>
+
+        <div class="modal fade" id="register">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>New Customer</h2>
+                        <button data-bs-dismiss="modal" class="btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <dl>
+                            <dt>Fisrt Name</dt>
+                            <dd><input  class="form-control" type="text"></dd>
+                            <dt>Last Name</dt>
+                            <dd><input class="form-control" type="password"></dd>
+                            <dt>Email</dt>
+                            <dd><input class="form-control" type="email"></dd>
+                            <dt> Create Username</dt>
+                            <dd><input class="form-control" type="email"></dd>
+                            <dt> Create Password</dt>
+                            <dd><input class="form-control" type="email"></dd>
+                            <dt>Age</dt>
+                            <dd><input class="form-control" type="number" min="25" max="50"></dd>
+                        </dl>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">Register</button>
+                        <button data-bs-dismiss="modal" class="btn btn-danger">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Existing Customer</h2>
+                        <button data-bs-dismiss="modal" class="btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <dl>
+                            <dt> Create Username</dt>
+                            <dd><input class="form-control" type="text"></dd>
+                            <dt> Create Password</dt>
+                            <dd><input class="form-control" type="text"></dd>
+                        </dl>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">Login</button>
+                        <button data-bs-dismiss="modal" class="btn btn-danger">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+            
+            <div class="navbar navbar-expand-lg navbar-light" style="background-color: gray; color: white;">
+                <div class="container-fluid">
+                    <ul>
+                        <li class="nav-item"><a href="offers.html" class="nav-link"></a>NEW IN & OFFERS</li>
+                        <li class="nav-item"><a href="#" class="nav-link"></a>GIFT IDEAS</li>
+                        <li class="nav-item"><a href="#" class="nav-link"></a>SCOTCH  WHISKY</li>
+                        <li class="nav-item"><a href="#" class="nav-link"></a>WORLD WHISKY</li>
+                        <li class="nav-item"><a href="#" class="nav-link"></a> SPIRIT & LIQUIORS</li>
+                        <li class="nav-item"><a href="#" class="nav-link"></a>WINE CHAMPIEN</li>
+                        <li class="nav-item"><a href="#" class="nav-link"></a>COCKTAILS</li>
+                    </ul>
+                </div>
+               </div>
+                <div class="carousel slide carousel-dark" id="banner" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="../public/images/sli1.jpg" class="w-100 d-block">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="../public/images/sli2.jpg" class="w-100 d-block">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="../public/images/sli3.jpg" class="w-100 d-block">
+                </div>
+            </div>
+            <div>
+                <button data-bs-target="#banner" data-bs-slide="prev" class="carousel-control-prev btn btn-dark ">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#banner" data-bs-slide="next" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <div class="carousel-indicators">
+                 <button class="active" data-bs-slide-to="0" data-bs-target="#banner"></button>
+                 <button data-bs-slide-to="1" data-bs-target="#banner"></button>
+                 <button data-bs-slide-to="2" data-bs-target="#banner"></button>
+            </div>
+        </div>
+               <div class="mt-2">
+                   <p><b>Scotch Malt Whisky</b> is a preeminent provider of high-end, rare, and collectible bottles and casks of its
+                    namesake. We provide the necessary structure allowing owners benefit from natural investment growth
+                    and safe storage of their collections. Innovation meets tradition, as each collectible is paired with a Non-
+                    Fungible Token, guaranteeing ownership, traceability, and auditability. Non-Fungible Tokens are traded
+                    in the virtual world on the blockchain, a form of decentralised public digital ledger, without the need to
+                    move or disturb the physical product. Ownership transfer is fast and secure, and guarantees that if the
+                    collectible is ever redeemed, only the owner of the NFT would be able to do that.</p>
+               </div>
+               <h2>RECOMMENDED FOR YOU</h2>
+
+               <div class="Container-fluid d-flex">
+                <div class="card">
+                    <img class="card-image" src="../public/images/w1.jpg">
+                    <div class=" card-header">
+                        <a href="#">Grand CRU</a>
+                     </div>
+                </div>
+    
+                <div class="card">
+                    <img class="card-image"src="../public/images/talis.jpg">
+                    <div class=" card-header">
+                        <a href="#">Talisker</a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img class="card-image" src="../public/images/w2.webp">
+                    <div class=" card-header">
+                        <a href="#">BALVENIE STORIES</a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img class="card-image" src="../public/images/w4.webp">
+                    <div class=" card-header">
+                        <a href="#">JOHNNIE WALKER RANGE</a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img class="card-image"src="../public/images/whiky.jpg">
+                    <div class=" card-header">
+                        <a href="#">DISCOVER ABERFELDY</a>
+                    </div>
+                </div>
+                </div>
+                <div class="m-4">
+                    <h2>DISCOVER MORE</h2>
+                </div>
+               <div class="container-fluid d-flex" >
+                <div class="pe-2 me-1">
+                    <a href="#"id="anchor"><img src="../public/images/ch1.png "><b>Whisky of the year</b> </a>
+                </div>
+                <div class="pe-2  me-1">
+                    <a href="#" id="anchor"><img src="../public/images/ch2.png"><b>Personalised Engraving</b></a>
+                </div> 
+                <div class="pe-2  me-1">
+                    <a href="#" id="anchor"><img src="../public/images/ch3.png"> <b>Personalised Labels</b></a>
+                </div> 
+                <div class="pe-2  me-1">
+                    <a href="#" id="anchor"><img src="../public/images/ch4.png"><b> Perfect Measure Samples</b></a>
+                </div>
+                 <div class="pe-2 me-1">
+                     <a href="#" id="anchor"><img src="../public/images/ch5.png" style="height:80px; width: 80px;"><b>Sell Your Bottle </b></a>
+                </div>
+               </div>
+               <div>
+                   <img  class=" ms-2" src="https://c.tenor.com/8pGLG8z-XY4AAAAC/viszki.gif">
+                <img src="../public/images/crystal-whiskey-glasses-wine-glasses.gif " >
+                 <img src="../public/images/whis.gif">
+            </div><br><br>
+
+            <div class="icons">
+                <a href="#"><span class="bi bi-facebook me-3" ></span> </a>
+                <a href="#"><span class="bi bi-twitter me-3"></span></a>
+                <a href="#"><span class="bi bi-youtube me-3"></span></a>
+                <a href="#"><span class="bi bi-instagram me-3"></span></a>
+            </div>
+            <footer class="mt-2">
+                <b> @copyright 2022; </b>
+            </footer>
+           
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+    </body>
+</html>
+
